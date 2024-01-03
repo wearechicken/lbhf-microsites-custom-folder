@@ -1,0 +1,191 @@
+/*
+  @file Theming the styles created by WYSIWYG inline styling.
+*/
+
+/* Alerts */
+.alert {
+  font-weight: bold;
+  padding: 1.5rem;
+  color: #364753;
+  font-size: 19px;
+  border: 5px solid #364753;
+  border-color: currentColor;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.alert-primary {
+  border-color: #ed7522;
+  color: #ed7522;  
+}
+
+.alert-info {
+  border-color: #297bbb;
+  color: #297bbb;
+
+}
+
+.alert-success {
+  border-color: #048a04;
+  color: #048a04;
+}
+
+.alert-danger {
+  border-color: #E40415;
+  color: #E40415;
+
+}
+
+.alert-fail {
+  border-color: #ed7522;
+  color: #ed7522;
+
+}
+
+.alert::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  background-color: currentColor;
+  -webkit-mask-image: url(/themes/custom/lbhf/assets/icons/alert.svg);
+  mask-image: url(/themes/custom/lbhf/assets/icons/alert.svg);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.action-link {
+  padding-bottom: 0.5rem;
+  font-size: var(--font-size-large);
+  --icon-color: var(--color-green);
+}
+
+.action-link:focus {
+  color: var(--color-black);
+  --icon-color: var(--color-black);
+}
+
+.action-link::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: '';
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  -webkit-mask-image: url('/themes/custom/lbhf/assets/icons/arrow-action-link.svg');
+  mask-image: url('/themes/custom/lbhf/assets/icons/arrow-action-link.svg');
+  background-color: var(--icon-color);
+}
+
+
+.list-checked li::marker {
+  content: "\2714\0020";
+  color: #048a04;
+}
+
+.inset-text {
+  padding: 1.5rem;
+  background-color: var(--color-accent-lighter);
+  border-left: 5px solid var(--color-accent);
+  color: var(--inset-text-color);
+}
+
+.fact-box-title {
+  text-align: center;
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+  max-width: initial !important;
+  margin: var(--spacing-large)
+}
+
+.fancy-heading {
+  position: relative;
+}
+
+.fancy-heading::before {
+  border-top: 6px solid var(--color-red);
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+  left: 0;
+}
+
+/* don't know how to force the span in */
+/* only works with normal backgrounds right now, would need to be moved for something better */
+.paragraph .fancy-heading span {
+  --color-section-pre-footer-bg: var(--color-accessible);
+}
+.fancy-heading span {
+  background-color: var(--color-section-pre-footer-bg);
+  display: inline-block;
+  padding-left: var(--spacing-smallest);
+  padding-right: var(--spacing-smallest);
+  position: relative;
+  margin-left: var(--spacing);
+}
+
+.underline {
+  position: relative;
+}
+
+
+.underline::after {
+  content: "";
+  width: 4em;
+  height: 3px;
+  background-color: var(--color-accent-lighter);
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+
+.field--name-localgov-text img {
+  margin-bottom: var(--spacing);
+}
+/* 
+.field--name-localgov-text a:has(img) img {
+  margin-bottom: 0;
+} */
+
+figure p {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 48rem) {
+  .figure_align-right {
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+    float: right;
+    margin-left: var(--spacing);
+  }
+
+  .figure_align-right .align-right {
+    margin-left: 0;
+    max-width: max-content;
+  }
+
+  .figure_align-left {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    float: left;
+    margin-right: var(--spacing);
+  }
+
+  .figure_align-left .align-left {
+    margin-left: 0;
+  }
+  .figure_align-right > * {
+    flex: 1 1 0
+  }
+
+}

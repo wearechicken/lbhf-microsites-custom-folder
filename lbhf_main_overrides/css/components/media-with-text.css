@@ -1,0 +1,55 @@
+.media-with-text + .media-with-text {
+  margin-bottom: var(--spacing-largest);
+}
+/* Commenting out a bunch from here to see if this code is */
+.media-with-text--media-left > div, 
+.media-with-text--media-right > div {
+  flex-basis: initial;
+  flex-grow: 0;
+}
+
+.media-with-text--media-left, 
+.media-with-text--media-right {
+  /* display: block; */
+  /* removing this becasue we don't want it on the black history month pages... */
+  /* border-bottom: 1px solid var(--color-accent); */
+  flex-direction: column;
+}
+.mobile-reverse-1 {
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 48rem) {
+  .media-with-text--media-left, 
+  .media-with-text--media-right {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+
+  .media-with-text--featured {
+    border: 0;
+    align-items: center;
+  }
+}
+
+/* .has--circular-1.media-with-text--media-left .media-with-text__body, 
+.has--circular-1.media-with-text--media-right .media-with-text__body {
+  width: auto;
+} */
+
+.circular-1 > div {
+  clip-path: circle(35% at 50% 50%);
+}
+
+.media-with-text a {
+  color: inherit;
+  display: block;
+}
+
+/* .media-with-text a:hover > *, 
+.media-with-text a:focus > * {
+  background-color: var(--color-focus);
+} */

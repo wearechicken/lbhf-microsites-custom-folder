@@ -1,0 +1,37 @@
+.service-cta-block__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing);
+  text-decoration: none;
+  color: var(--color-white) !important;
+  background-color: var(--color-accent);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.service-cta-block__link:hover {
+  background-color: var(--color-info);
+  color: var(--color-white);
+}
+
+.service-cta-block__link--cta-action {
+  background-color: #007f3b;
+  color: var(--color-white);
+}
+
+.service-cta-block__link--cta-action:hover {
+  background-color: #00662f;
+  color: var(--color-white);
+}
+
+/* In LGD Service link buttons are as wide as the container they come in -
+   but we need to make the wizzywig ones as wide as the buttons on service landing pages
+   this is 100% page wide / 3 - some margins
+   I don't think we're gonna get it that accurate but lets try!
+*/
+@media screen and (min-width: 48rem) {
+  p > .service-cta-block__link {
+    width: calc((100% / 2) - var(--grid-column-spacing))
+  }
+}

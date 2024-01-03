@@ -1,0 +1,9 @@
+.pull-out-quote__content {
+  color: var(--quote-content-color);
+}
+
+/* the wizzywig gives you a blockquote without the class, so I've covered both */
+.pull-out-quote__content,
+blockquote {
+  font-size: 24px;
+}

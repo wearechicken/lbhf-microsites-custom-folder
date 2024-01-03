@@ -1,0 +1,62 @@
+.microsite-header__main {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.microsite-header__name-slogan {
+    min-width: 22rem;
+    text-align: center;
+}
+.microsite-header__bg-logos {
+    background-image: url(../assets/images/triborough_logos_rgb.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* make some space for these images on mobile */
+    height: 5rem; 
+    width: 100%; 
+    background-position: bottom;
+}
+
+@media screen and (min-width: 48rem) {
+    .microsite-header__bg-logos {
+        background-position: bottom right;
+    }
+}
+/* make the focus state work */
+.microsite-header__logo a {
+    display: block;
+}
+
+/* We've moved the menu out of the header main div so that it sits on it's own row */
+.microsite-header__menus {
+    /* we want this menu to have a background colour of the primary color chosen */
+    background-color: var(--color-accent);
+    padding: 1rem;
+}
+
+.microsite-header__menus a {
+    color: var(--header-link-color);
+}
+
+.microsite-header__menus a:focus,
+.microsite-header__menus a:hover {
+  color: var(--header-link-hover-color);
+}
+
+.microsite-header__menu .menu {
+    background-color: var(--color-accent);
+}
+
+.microsite-header__menu .menu-item--level-0::before {
+    content: '';
+    display: inline-block;
+    height: calc(100% - 1.75rem);
+    width: 2px;
+    position: absolute;
+    left: 0px;
+    background-color: var(--header-link-color);
+}
+
+.microsite-header__off-canvas-toggle {
+    width: 100%;
+}

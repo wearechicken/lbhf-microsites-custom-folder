@@ -1,0 +1,48 @@
+name: "LBHF main overrides"
+description: "Your sub-theme, which uses localgov_microsites_base as its base theme."
+type: theme
+core_version_requirement: ^8.8 || ^9
+base theme: "localgov_microsites_base"
+ckeditor5-stylesheets:
+  - css/base/ckeditor5.css
+
+libraries:
+  - lbhf_main_overrides/service-cta-block
+  - lbhf_main_overrides/form-items  
+
+libraries-extend:
+  localgov_microsites_base/variables:
+    - lbhf_main_overrides/variables
+  localgov_microsites_base/base:
+    - lbhf_main_overrides/base
+  localgov_microsites_base/banner:
+    - lbhf_main_overrides/banner
+  localgov_microsites_base/featured-teasers:
+    - lbhf_main_overrides/featured-teasers
+  localgov_microsites_base/full:
+    - lbhf_main_overrides/full
+  localgov_microsites_base/quote:
+    - lbhf_main_overrides/quote  
+  localgov_microsites_base/media-with-text:
+    - lbhf_main_overrides/media-with-text
+  localgov_microsites_base/wysiwyg-styles:
+    - lbhf_main_overrides/wysiwyg-styles    
+
+regions:
+  tabs: "Tabs"
+  off_canvas: "Off-canvas"
+  header: "Header"
+  search: "Search"
+  main_menu: "Main menu"
+  utility_menu: "Utility menu"
+  page_title: "Page title"
+  breadcrumb: "Breadcrumb"
+  messages: "Messages"
+  content_top: "Content top"
+  content: "Content"
+  content_bottom: "Content bottom"
+  sidebar_first: "Sidebar first"
+  sidebar_second: "Sidebar second"
+  footer_menu: "Footer menu"
+  footer: "Footer"
+  disabled: "Disabled"

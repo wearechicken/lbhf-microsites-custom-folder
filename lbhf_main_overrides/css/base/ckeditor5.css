@@ -1,0 +1,200 @@
+/*
+  @file Styles for the ckeditor.
+*/
+
+/* Alerts */
+.alert {
+    font-weight: bold;
+    padding: 1.5rem;
+    color: #364753;
+    font-size: 19px;
+    border: 5px solid #364753;
+    border-color: currentColor;
+    border-radius: 0.25rem;
+    background-color: white;
+  }
+  
+  .alert-primary {
+    border-color: #ed7522;
+    color: #ed7522;  
+  }
+  
+  .alert-info {
+    border-color: #297bbb;
+    color: #297bbb;
+  
+  }
+  
+  .alert-success {
+    border-color: #048a04;
+    color: #048a04;
+  }
+  
+  .alert-danger {
+    border-color: #E40415;
+    color: #E40415;
+  
+  }
+  
+  .alert-fail {
+    border-color: #ed7522;
+    color: #ed7522;
+  
+  }
+  
+  .alert::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    background-color: currentColor;
+    -webkit-mask-image: url(/themes/custom/lbhf/assets/icons/alert.svg);
+    mask-image: url(/themes/custom/lbhf/assets/icons/alert.svg);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+  
+  /* Links */
+  .action-link {
+    padding-bottom: 0.5rem;
+    font-size: 25px;
+  }
+  
+  .action-link:focus {
+    color: #364753;
+  }
+  .action-link:focus::before {
+    background-color: #364753;
+  }
+  
+  .action-link::before {
+    display: inline-block;
+    margin-right: 0.5rem;
+    content: '';
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    -webkit-mask-image: url('/themes/custom/lbhf/assets/icons/arrow-action-link.svg');
+    mask-image: url('/themes/custom/lbhf/assets/icons/arrow-action-link.svg');
+    background-color: #048a04;
+  }
+  
+  
+  .btn.btn-start {
+    padding: 0.5rem 1rem;
+    color: white;
+    border: 1px solid #048a04;
+    background-color: #048a04;
+  }
+  
+  .btn.btn-start:focus,
+  .btn.btn-start:hover {
+    color: #048a04;
+    background-color: white;
+  }
+  
+  .btn.btn-start::after {
+    top: -2px;
+    margin-left: 0.5rem;
+    content: "\203A";
+    font-size: 2.875rem;
+  }
+  
+  .external-link::after {
+    background-color: #652c95;
+  }
+  
+  .list-checked li::marker {
+    content: "\2714\0020";
+    color: #048a04;
+  }
+  
+  /* Call out */
+  .callout {
+    color: white;
+    font-size: 1.3125rem;
+  }
+  
+  .callout a {
+    color: white;
+  }
+  .callout a:focus {
+    color: white;
+    background-color: #505a5f;
+  }
+  
+  .callout-primary {
+    background-color: #652c95;
+  }
+  
+  .callout-success {
+    background-color: #048a04;
+  }
+  
+  .callout-danger {
+    background-color: #e4251b;
+  }
+  
+  .callout-teal {
+    background-color: teal;
+  }
+  
+  .callout-carbon {
+    background-color: #505a5f;
+  }
+  
+  .callout-yellow,
+  .callout-yellow a {
+    color: #505a5f;
+    background-color: #fd0;
+  }
+  
+  .fact-box-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    max-width: initial !important;
+    margin: 1.5rem
+  }
+  
+  
+  .inset-text {
+    padding: 1.5rem;
+    background-color: #f4637b;
+    border-left: 5px solid #d92644;
+  }
+  
+  .external-link::after {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.25rem;
+    content: "";
+    background-color: #d92644;
+  }
+  
+  /* duplicated in serice-cta-block.css */
+  .service-cta-block__link {
+    background-color:#297bbb;
+    padding: 1rem;
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .service-cta-block__link--cta-action {
+    background-color: #007f3b;
+    padding: 1rem;
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .ck-editor__editable {
+    min-height: 200px;
+  }

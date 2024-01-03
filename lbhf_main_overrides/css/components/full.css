@@ -1,0 +1,13 @@
+/*
+  @file Theming nodes in full view mode.
+*/
+
+.webform-confirmation {
+  max-width: var(--width-restricted-width-section);
+}
+
+
+/* reset the width of a text field if it has a fact box inside it */
+.field--name-localgov-text:has(.fact-box-title) {
+  max-width: initial;
+}

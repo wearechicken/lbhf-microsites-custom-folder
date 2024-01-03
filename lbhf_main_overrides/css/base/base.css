@@ -1,0 +1,8 @@
+table caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.microsite-header__logo a {
+    display: block;
+}

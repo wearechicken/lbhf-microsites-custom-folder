@@ -1,0 +1,50 @@
+variables:
+  css:
+    base:
+      # This is called in your lbhf_main_overrides.info.yml file via `libraries-extend`.
+      # This ensures that in the cascade, your variables come after the base theme's
+      # variables.
+      css/variables.css: {}
+      css/base/base.css: {}
+      css/base/wysiwyg-styles.css: {}
+
+banner:
+  css:
+    theme:
+      css/components/banner.css: {}
+
+base:
+  css:
+    theme:
+      css/base/base.css: {}
+
+featured-teasers:
+  css:
+    theme:
+      css/components/featured-teasers.css: {}
+
+form-items:
+  css:
+    theme:
+      css/components/form-items.css: {}
+
+full:
+  css:
+    theme:
+      css/components/full.css: {}
+
+
+media-with-text:
+  css:
+    theme:
+      css/components/media-with-text.css: {}
+
+quote:
+  css:
+    theme:
+      css/components/quote.css: {}
+
+service-cta-block:
+  css:
+    theme:
+      css/components/service-cta-block.css: {}

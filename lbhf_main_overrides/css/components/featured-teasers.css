@@ -1,0 +1,8 @@
+.featured-teaser__heading {
+  color: var(--featured-teaser-heading-color);
+}
+
+.featured-teaser a {
+  font-weight: var(--featured-teaser-link-weight);
+  display: block;
+}
